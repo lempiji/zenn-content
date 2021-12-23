@@ -3,7 +3,7 @@ title: "CI回してMarkdownにバッジを置く、ただそれだけのこと�
 emoji: "✅"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["Markdown", "テスト", "CI", "D言語", "ツール"]
-published: false
+published: true
 ---
 
 [![qiita-adc-d-20211124](https://github.com/lempiji/zenn-content/actions/workflows/test-qiita-adc-d-20211224.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-qiita-adc-d-20211224.yml)
