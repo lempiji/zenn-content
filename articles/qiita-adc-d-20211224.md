@@ -6,7 +6,7 @@ topics: ["Markdown", "テスト", "CI", "D言語", "ツール"]
 published: false
 ---
 
-[![README](https://github.com/lempiji/md/actions/workflows/test-md.yml/badge.svg)](https://github.com/lempiji/md/actions/workflows/test-md.yml)
+[![qiita-adc-d-20211124](https://github.com/lempiji/zenn-content/actions/workflows/test-qiita-adc-d-20211224.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-qiita-adc-d-20211224.yml)
 
 この記事は [Qiita Advent Calendar 2021 の D言語カレンダー](https://qiita.com/advent-calendar/2021/dlang) 24日目 の記事です。
 
@@ -350,6 +350,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: dlang-community/setup-dlang@v1
+      with:
+        compiler: dmd-2.097.2
     - name: 'Test Markdown'
       run: |
         dub run md --compiler=$DC -- articles/qiita-adc-d-20211224.md
