@@ -366,11 +366,7 @@ jobs:
 
 リポジトリにアクセスして Actions のタブに移動、Create Status Badgeのメニューを押します。
 
-[!img](/images/github-create-status-badge.png)
-
 あとはコピーボタンを押せばコピーされるので、ドキュメントの要所に埋め込むだけです。簡単ですね！
-
-[!copy_status_badge](/images/github-copy-status-badge-markdown.png)
 
 # 他の連携例
 
