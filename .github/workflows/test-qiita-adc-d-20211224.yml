@@ -13,8 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: dlang-community/setup-dlang@v1
-      with:
-        compiler: dmd-2.097.2
     - name: 'Test Markdown'
       run: |
         dub run md --compiler=$DC -- articles/qiita-adc-d-20211224.md
