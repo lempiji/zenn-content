@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/example-cpp-d2
+example-cpp-d2.so
+example-cpp-d2.dylib
+example-cpp-d2.dll
+example-cpp-d2.a
+example-cpp-d2.lib
+example-cpp-d2-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst
