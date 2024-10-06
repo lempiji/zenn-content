@@ -347,6 +347,10 @@ https://dlang.org/library/std/range/search_policy.html
 ローカル関数をネストしすぎないように気をつけましょう。
 1000回くらいだったらコンパイル時間もほぼ気にならないと思うので、それくらいに留めておくと良いと思います。
 
+サンプルコードのまとめはこちら。
+
+https://github.com/lempiji/zenn-content/tree/main/examples/dmd-nested-function-limit
+
 ## 謝辞・参考
 
 この記事は以下の記事を参考にしながら書かせていただきました。感謝！
