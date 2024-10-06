@@ -1,0 +1,12 @@
+name "example-cpp-d2"
+description "A minimal D application."
+authors "lempiji"
+copyright "Copyright © 2023, lempiji"
+license "proprietary"
+
+libs "Mylib2"
+//dflags "-mscrtlib=libcmt" platform="dmd"  // ランタイムライブラリが「マルチスレッド（/MT）」かつDMDの場合
+//dflags "--mscrtlib=libcmt" platform="ldc" // ランタイムライブラリが「マルチスレッド（/MT）」かつLDCの場合（無くても動作する）
+dflags "-mscrtlib=msvcrt" platform="dmd"  // ランタイムライブラリが「マルチスレッド DLL（/MD）」かつDMDの場合
+dflags "--mscrtlib=msvcrt" platform="ldc" // ランタイムライブラリが「マルチスレッド DLL（/MD）」かつLDCの場合
+lflags "/LTCG"
