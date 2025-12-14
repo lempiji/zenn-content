@@ -6,6 +6,8 @@ topics: ["dlang", "library"]
 published: false
 ---
 
+[![dlang-adc-2025-phobos-std-path](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-path.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-path.yml)
+
 ## はじめに
 
 こちらは、D言語 Advent Calendar 2025 1日目の記事となります。
