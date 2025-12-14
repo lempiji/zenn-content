@@ -34,7 +34,7 @@ https://dlang.org/phobos/std_path.html
 
 **使用例**
 
-```d name=buildPath
+```d global name=buildPath
 import std.path;
 import std.stdio;
 
@@ -52,7 +52,7 @@ void main() {
 
 **使用例**
 
-```d name=buildNormalizedPath
+```d global name=buildNormalizedPath
 import std.path;
 import std.stdio;
 
@@ -70,7 +70,7 @@ void main() {
 
 **使用例**
 
-```d name=dirName
+```d global name=dirName
 import std.path;
 import std.stdio;
 
@@ -90,7 +90,7 @@ void main() {
 
 **使用例**
 
-```d name=baseName
+```d global name=baseName
 import std.path;
 import std.stdio;
 
@@ -110,7 +110,7 @@ https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%AD%E3%83%96
 
 **使用例**
 
-```d name=globMatch
+```d global name=globMatch
 import std.path;
 import std.stdio;
 
@@ -131,7 +131,7 @@ OS依存のルール（禁止文字など）を含むため、**自前の正規�
 
 **使用例**
 
-```d
+```d global name=isValidPath
 import std.path;
 import std.stdio;
 
@@ -153,7 +153,7 @@ void main() {
 
 **使用例**
 
-```d
+```d global name=isValidFilename
 import std.path;
 import std.stdio;
 
