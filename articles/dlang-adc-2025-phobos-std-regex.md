@@ -14,7 +14,7 @@ published: true
 
 こちらは、D言語 Advent Calendar 2025 2日目の記事となります。
 
-`https://qiita.com/advent-calendar/2025/dlang`
+https://qiita.com/advent-calendar/2025/dlang
 
 個人的によく使う標準ライブラリを、サクッと「こんなのあるんだ〜」で読める形で紹介していくシリーズです。
 
