@@ -3,8 +3,10 @@ title: "D言語標準ライブラリ紹介：std.regex"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library", "regex"]
-published: false
+published: true
 ---
+
+[![dlang-adc-2025-phobos-std-regex](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-regex.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-regex.yml)
 
 # D言語標準ライブラリ紹介：std.regex
 
