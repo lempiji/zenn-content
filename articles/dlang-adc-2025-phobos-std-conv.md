@@ -3,12 +3,16 @@ title: "D言語標準ライブラリ紹介：std.conv"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
-published: false
+published: true
 ---
 
-# D言語標準ライブラリ紹介：std.conv
+[![dlang-adc-2025-phobos-std-conv](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-conv.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-conv.yml)
 
 ## はじめに
+
+こちらは、D言語 Advent Calendar 2025 3日目の記事となります。
+
+https://qiita.com/advent-calendar/2025/dlang
 
 D言語の標準ライブラリにおける最強格、 **使用頻度最高** と思われる `std.conv` の紹介です。
 「型変換まわり」をまとめて面倒見てくれる便利モジュールなので、D言語使っていると大体インポートしているかもしれません。
