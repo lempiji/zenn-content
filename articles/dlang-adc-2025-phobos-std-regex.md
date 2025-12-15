@@ -20,7 +20,7 @@ published: true
 
 ## `std.regex` 紹介
 
-`https://dlang.org/phobos/std_regex.html`
+https://dlang.org/phobos/std_regex.html
 
 `std.regex` は、D言語の正規表現モジュールです。
 典型的には **入力バリデーション / 抽出 / 置換** あたりで出番があります。
