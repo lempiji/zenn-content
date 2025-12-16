@@ -1,13 +1,12 @@
 ---
-
 title: "D言語標準ライブラリ紹介：std.stdio"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
-published: false
+published: true
 ---
 
-# D言語標準ライブラリ紹介：std.stdio
+[![dlang-adc-2025-phobos-std-stdio](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-stdio.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-stdio.yml)
 
 ## はじめに
 
@@ -144,7 +143,7 @@ void main() {
 ```
 
 
-### 6. `byLine` / `byLineCopy`（行をrangeとして読む）
+### 6. `byLine` / `byLineCopy`
 
 `byLine()` は **`File` を受け取って「1行ずつ読むレンジ」を返す** という関数です。
 UFCSを使うと `foreach (line; file.byLine()) { }` のように使えます。
