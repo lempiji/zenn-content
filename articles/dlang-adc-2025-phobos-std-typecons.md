@@ -3,8 +3,10 @@ title: "D言語標準ライブラリ紹介：std.typecons"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
-published: false
+published: true
 ---
+
+[![dlang-adc-2025-phobos-std-typecons](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-typecons.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-typecons.yml)
 
 ## はじめに
 
