@@ -3,10 +3,14 @@ title: "D言語標準ライブラリ紹介：std.array"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
-published: false
+published: true
 ---
 
-D言語アドベントカレンダー 2025 の **7日目**の記事です。
+[![dlang-adc-2025-phobos-std-array](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-array.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-array.yml)
+
+## はじめに
+
+こちらは、Qiita D言語アドベントカレンダー 2025 の **7日目** の記事です。
 
 https://qiita.com/advent-calendar/2025/dlang
 
@@ -31,6 +35,7 @@ https://dlang.org/phobos/std_array.html
 > レンジとは、雑に言えば「`foreach`で順番に読める要素が並んだもの」「`empty`・`front`・`popFront` で逐次走査できる要素列を表すオブジェクト」です。
 
 レンジは遅延評価されるオブジェクトが多いので、**どこかで配列に確定させたい** ことがよくあります。たとえば何かの関数に渡したり、インデックスアクセスやランダムアクセスできるようにする、といった目的です。
+UFCSを使って `someRange.array` と書くことが多いです。
 
 **使用例**
 
@@ -50,7 +55,7 @@ void main()
 
 ### 2. `Appender` / `appender`
 
-「配列にたくさんの要素を追加する」時に、**速く・無駄なく** 要素を追加するための仕組みです。
+「配列にたくさんの要素を追加する」時に、**速く・無駄なく** 要素を追加するための仕組みです。いわゆる `StringBuilder` のようなものです。
 `Appender` は単純な配列の結合操作（`arr ~= data`）より効率的で、内部でメモリ確保やコピーの管理をうまくやってくれます。
 
 また、 `appender` は `Appender` を作るための便利関数です。型だけ指定して作れたり、既存配列を渡して作ることもできます。
@@ -83,7 +88,7 @@ void main()
 レンジのレンジを**一気に連結して1つの配列**にする関数です。他の言語では `flatMap` や `flatten`、`SelectMany` のような名前で呼ばれるものです。
 結合時に区切り文字も指定できます。区切りに "/" を指定してURLを組み立てる時に便利です。
 
-なお、これは **「eager」と呼ばれる即時で配列を作る（確定させる）**タイプの関数です。
+なお、これは **「eager」と呼ばれる即時で配列を作る（確定させる）** タイプの関数です。
 もし遅延評価するようなものが欲しい時は `std.algorithm` の `joiner` を使ってください。
 あるいは `joiner` を使ってから `array` を呼んで配列に確定させるような場合、大抵この `join` が効率的です。
 
@@ -192,6 +197,8 @@ void main()
 ## まとめ（使い分けの目安）
 
 以上、`std.array` の中からよく使う7つの関数を紹介しました。
+レンジと動的配列の間をつなぐものが多く、特に `array` は頻出なので使ってみてください。
+
 これら以外にも色々な関数がありますので、ぜひドキュメントを参照してみてください。
 
 https://dlang.org/phobos/std_array.html
