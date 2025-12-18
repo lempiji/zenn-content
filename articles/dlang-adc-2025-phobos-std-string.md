@@ -4,7 +4,7 @@ emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
 published: true
-----------------
+---
 
 [![dlang-adc-2025-phobos-std-string](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-string.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-string.yml)
 
@@ -25,11 +25,11 @@ https://dlang.org/phobos/std_string.html
 `std.string` は、Dの文字列まわりで「よく出る前処理・探索・判定」をまとめて押さえられるモジュールです。非常に頻出で利便性が高い関数が多く入っているので、ぜひ覚えておきたいところです。
 
 ちなみにここで扱う文字列型は `string` / `wstring` / `dstring` の不変型文字列と、 `char[]` / `wchar[]` / `dchar[]` の可変文字列があります。
-関数によってどちらを要求するか変わってきますので、そのあたりは関数の機能から見極めるか、ドキュメントを参照してください。
+大体 `string` (`immutable(char)[]`) を使うことが多いと思いますが、関数によってどちらを要求するか変わってきますので、そのあたりは関数の機能から見極めるか、ドキュメントを参照してください。
 
 この記事では、個人的によく使う **6つの機能** をピックアップして紹介します。
 
-## 1. strip
+### 1. strip
 
 **前後の空白を落としてから処理する**、は入力処理の定番です。
 `strip` は両端、`stripLeft` / `stripRight` は片側だけを削れます。よく `trim` と呼ばれたりもします。
@@ -58,7 +58,7 @@ void main()
 ```
 
 
-## 2. chomp / chompPrefix 
+### 2. chomp / chompPrefix 
 
 `chomp(str)` は、末尾に改行系があれば **1 個だけ**　落とします（`"\r"`, `"\n"`, `"\r\n"` など）。delimiter 指定版もあり、末尾がその delimiter で終わるときにだけ削れます。
 
@@ -85,7 +85,7 @@ void main()
 ```
 
 
-## 3. startsWith / endsWith
+### 3. startsWith / endsWith
 
 `startsWith` / `endsWith` は **前方一致 / 後方一致** の判定として頻出の関数です。
 `std.string` からも使えますが、実体は `std.algorithm.searching` 側の関数が `public import` されています。
@@ -106,7 +106,7 @@ void main()
 ```
 
 
-## 4. indexOf / lastIndexOf
+### 4. indexOf / lastIndexOf
 
 文字列中の何かを探して「位置」を返す関数です。
 `indexOf` は最初に見つかった位置、`lastIndexOf` は最後に見つかった位置を返します。
@@ -136,7 +136,7 @@ void main()
 ```
 
 
-## 5. splitLines / lineSplitter
+### 5. splitLines / lineSplitter
 
 ログ・設定ファイル・簡易データなど、文字列を「行ごとに分割する」という関数です。
 
@@ -176,7 +176,7 @@ void main()
 ```
 
 
-## 6. std.array の再公開系（std.string からも呼べる）
+### 6. std.array の再公開系（std.string からも呼べる）
 
 `std.string` は、`std.array` の `split / join / replace / replaceInPlace / empty` を **public import** しています。
 `import std.string;` だけで、文字列を扱っていて「つい欲しくなる配列系の関数」も一緒に入ってきます。`string` は `immutable(char)[]` のエイリアスなので、`std.array` 側の関数も普通に使えるわけですね。便利。
