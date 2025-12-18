@@ -3,9 +3,10 @@ title: "D言語標準ライブラリ紹介：std.string"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
-published: false
+published: true
 ----------------
 
+[![dlang-adc-2025-phobos-std-string](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-string.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-phobos-std-string.yml)
 
 ## はじめに
 
