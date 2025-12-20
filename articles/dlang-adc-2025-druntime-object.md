@@ -3,8 +3,10 @@ title: "D言語標準ライブラリ紹介：object"
 emoji: "📚"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["dlang", "library"]
-published: false
+published: true
 ---
+
+[![dlang-adc-2025-druntime-object](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-druntime-object.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-druntime-object.yml)
 
 ## はじめに
 
@@ -12,7 +14,7 @@ published: false
 
 https://qiita.com/advent-calendar/2025/dlang
 
-今回は10日目で区切りが良いので、ちょっと趣向を変えて `object` モジュールを取り上げます。
+こちら標準ライブラリをサクッと紹介するシリーズですが、今回は10日目で区切りが良いので、ちょっと趣向を変えて `object` モジュールを取り上げます。
 
 
 ## `object` 紹介
