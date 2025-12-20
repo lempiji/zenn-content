@@ -3,13 +3,22 @@ title: "D言語の新キーワード __rvalue 解説（dmd 2.111.0）"
 emoji: "🚀"
 type: "tech"
 topics: ["dlang", "compiler", "performance"]
-published: false
+published: true
 ---
+
+[![dlang-adc-2025-rvalue-behavior](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-rvalue-behavior.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-adc-2025-rvalue-behavior.yml)
 
 ## はじめに
 
-dmd 2.111.0 で **新キーワード `__rvalue`** が追加されました。これは `__rvalue(expr)` という **primary expression** として導入され、**本来 lvalue な式も rvalue として扱わせる** ためのものです。
+こちらは、Qiita D言語アドベントカレンダー 2025 の **20日目** の記事です。
 
+https://qiita.com/advent-calendar/2025/dlang
+
+今回は dmd 2.111.0 で **新キーワード `__rvalue`** が追加されましたので、その紹介です。
+
+## 概要
+
+`__rvalue` の意味論としては、**本来 lvalue な式も rvalue として扱わせる** ためのものです。
 この機能の狙いは「`ref` overload の選択」「move ctor / move assignment の有効化」「ライブラリ primitive（`move` / `forward`）実装の足場」を **言語機能として提供する** ことにあります。
 
 本記事は、**コピー／ムーブ／破棄順序を理解・コントロールしたいプログラマーの方々向け** に、仕様と実験結果の両方から「どこまでコントロールしうるか」を整理して、実務的なガイドラインの基礎をまとめます。
