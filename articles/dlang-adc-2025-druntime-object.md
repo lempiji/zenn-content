@@ -42,7 +42,7 @@ D言語の例外機構（`throw`/`catch`）に関して、例外オブジェク�
 という構造になっています。
 
 基本的には `Exception` の派生クラスを `throw` して、`catch` で捕まえて処理する形にします。
-`throw` や `try-catch` については [公式ドキュメント]() や [D言語Cookbook]() などを参照ください。
+`throw` や `try-catch` については [公式ドキュメント](https://dlang.org/spec/errors.html) や [D言語Cookbook](https://dlang-jp.github.io/Cookbook/cookbook--exception_example.html) などを参照ください。
 
 **使用例**
 
