@@ -3,7 +3,7 @@ title: "世にも奇妙なD言語"
 emoji: "🎭"
 type: "tech"
 topics: ["dlang", "compiler"]
-published: false
+published: true
 ---
 
 [![dlang-strange-in-dmd2112](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-strange-in-dmd2112.yml/badge.svg)](https://github.com/lempiji/zenn-content/actions/workflows/test-dlang-strange-in-dmd2112.yml)
