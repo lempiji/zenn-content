@@ -1,4 +1,4 @@
-name: dlang-strange-features-dmd2112
+name: dlang-strange-in-dmd2112
 on:
   push:
     branches: [ main ]
